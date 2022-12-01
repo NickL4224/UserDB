@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+    
+    {% block main %}
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>City</th>
+            <th>State</th>
+            <th id="delete-col">Delete</th>
+            <th id="user-col">View User</th>
+        </tr>
+
+        {% for customer in customers %}
+        <tr>
+            <td>{{ customer.id }}</td>
+            <td>{{ customer.first_name }}</td>
+            <td>{{ customer.last_name }}</td>
+            <td>{{ customer.email }}</td>
+            <td>{{ customer.phone }}</td>
+            <td>{{ customer.city }}</td>
+            <td>{{ customer.state }}</td>
+            <td><form action="{{ url_for('delete_cust', id=customer.id) }}" method="POST">
+                <input type="image" src="\static\images\Delete.png" name="delete_button" id="delete-btn">
+            </form></td>  
+            <td>
+                <form action="{{ url_for('retrieveSingleCustomer', id=customer.id) }}" method="GET">
+                    <input type="image" src="\static\images\User.png" name="user_button" id="user-btn">
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% endblock %}
+

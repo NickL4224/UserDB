@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Delete Customer</title>
+</head>
+<body>
+    
+
+
+    <form action="{{ url_for('delete_cust', id=id)" method="POST" id="deleteOneForm">
+        <input type="number" name="id" id="id">
+        <input type="submit" value="Delete this ID">
+        <a href='/home'>Cancel</a>
+    </form>
+
+
+    <form action="{{ url_for('delete_all') }}" method="POST" id="deleteAllForm">
+        <h1>Cannot be undone!!!!!!</h1>
+        <input type="submit" value="DELETE ALL">
+    </form>
+</body>
+</html>

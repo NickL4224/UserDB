@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Single Customer</title>
+</head>
+<body>
+
+
+    <h3>ID</h3>
+    <p>{{customer.id}}</p><hr>
+
+    <h3>First Name</h3>
+    <p>{{customer.first_name}}</p><hr>
+
+    <h3>Last Name</h3>
+    <p>{{customer.last_name}}</p><hr>
+
+    <h3>Email</h3>
+    <p>{{customer.email}}</p><hr>
+
+    <h3>Phone</h3>
+    <p>{{customer.phone}}</p><hr>
+
+    <h3>City</h3>
+    <p>{{customer.city}}</p><hr>
+
+    <h3>State</h3>
+    <p>{{customer.state}}</p><hr>
+    
+</body>
+</html>

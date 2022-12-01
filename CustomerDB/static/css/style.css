@@ -1,0 +1,123 @@
+/*
+    NAVBAR start
+*/
+
+
+#nav_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 100px;
+    overflow: hidden;
+    background-color: rgb(95, 95, 95);
+}
+
+#nav_li {
+    float: right;
+    padding-left: 10px;
+    padding-right: 100px;
+}
+  
+#nav_a {
+    display: block;
+    padding: 8px;
+    background-color: rgb(95, 95, 95);
+}
+
+#nav_li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 60px;
+
+}
+  
+#nav_li a:hover {
+    background-color: rgba(7, 7, 7, 0.5);
+}
+
+/*
+    NAVBAR END
+*/
+
+
+
+
+
+
+
+/*
+
+    TODO: Seperate out the forms
+
+*/
+
+
+
+
+td {
+    padding: 5px;
+}
+
+th {
+    margin-left: 0px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 90%;
+}
+
+
+#delete-btn, #user-btn {
+    max-width: 100%;
+    max-height: 25px;
+    margin: auto;
+    display: block;
+}
+
+#delete-col, #user-col {
+    max-width: 30px;
+}
+
+
+form input {
+    width: 100%;
+    clear: both;
+}
+
+form {
+    display: table;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+p {
+    display: table-row;
+}
+
+#deleteAllForm, #deleteOneForm {
+    margin-top: 50px;
+}
+
+
+#create_customer_form {
+    margin-top: 100px;
+}
+
+#user_count {
+    font-size: 150px;
+    margin-right: 40%;
+    padding: 50px;
+    margin-top: 50px;
+}
